@@ -50,7 +50,7 @@ function doPost() {
 function verifyResult {
   if [[ "$RESULT_CODE" = "201" ]]; then
     echo "PR link: $(cat "$RESULT" | $JQ .links.html.href)"
-    exit 0
+    return 0
   fi
 
   echo $RESULT_CODE
