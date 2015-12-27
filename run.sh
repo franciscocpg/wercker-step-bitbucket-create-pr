@@ -97,7 +97,7 @@ fi
 if [[ "$WERCKER_GIT_BRANCH" =~ $WERCKER_BITBUCKET_CREATE_PR_EXCLUDE ]]; then
   echo "Branch '$WERCKER_GIT_BRANCH' match to exclude filter '$WERCKER_BITBUCKET_CREATE_PR_EXCLUDE'"
   echo "Exiting step"
-  exit 0
+  return 0
 fi
 
 # Execution

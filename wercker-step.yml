@@ -1,5 +1,5 @@
 name: bitbucket-create-pr
-version: 0.0.2
+version: 0.0.3
 description: Create bitbucket pull request on successful build
 keywords:
   - pull
