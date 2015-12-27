@@ -1,0 +1,3 @@
+#!/bin/bash
+source test/env-test
+./run.sh

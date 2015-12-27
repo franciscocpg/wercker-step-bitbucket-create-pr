@@ -1,0 +1,22 @@
+name: bitbucket-create-pr
+version: 0.0.1
+description: Create bitbucket pull request on successful build
+keywords:
+  - pull
+  - requests
+  - bitbucket
+  - create
+  - approve
+properties:
+  password:
+    type: string
+    required: true
+  username:
+    type: string
+    required: true
+  dest_branch:
+    type: string
+    required: false
+  exclude:
+    type: string
+    required: false
