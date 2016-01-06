@@ -2,3 +2,7 @@ box: wercker/default
 build:
   steps:
     - validate-wercker-step
+  after-steps:
+    - slack-notifier:
+        url: $SLACK_WEBHOOK_URL
+        username: wercker    
